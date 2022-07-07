@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>highChart</title>
+        <script src="jquery.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/data.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <link href="highChart.css" rel="stylesheet" type="text/css" />
+        <script defer src="app.js"></script>
+    </head>
+    <body>
+        <div id="user-section">
+            <input type="text" id='search'>
+            <button id="submit">Search</button>
+            <div id="container2">
+                <tr>
+                    <p scope="row" id="searchCoinId"></p>
+                    <p id="searchCoinPrice"></p>
+                    <a id="hyperLink" href="https://en.wikipedia.org/wiki/Cryptocurrency">Link to get more informations!</a>
+                </tr>
+            </div>
+          </div>
+        <figure class="highcharts-figure">
+        <div id="container"></div>
+            <p class="highcharts-description"></p>
+        </figure>
+    </body>
+    <tbody>
+        <div class="coinsId">
+            <tr>
+                <th class="highcharts-text" scope="row"></th>
+                <td class="highcharts-number"></td>
+            </tr>
+        </div>
+    </tbody>
+</html>
